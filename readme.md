@@ -171,9 +171,9 @@ As three simple examples, `eFG%`, `TS%`, and `MP` each have a relatively positiv
 
 <div style="text-align:center"><img src='model/feature_selection/plots/mp_pdp.png' width=70%></div>
 
-<div style="text-align:center"><img src="model/feature_selection/plots/efg%_pdp.png" width=70%></div>
+<div style="text-align:center"><img src="model/feature_selection/plots/efg_pdp.png" width=70%></div>
 
-<div style="text-align:center"><img src="model/feature_selection/plots/ts%_pdp.png" width=70%></div>
+<div style="text-align:center"><img src="model/feature_selection/plots/ts_pdp.png" width=70%></div>
 
 
 Free throws appeared as highly predictive in both the correlation and permutation importance tables. We see that `FT_RATE` and `PER100_FTA` each have a positive linear relationship with the target variable. One major takeaway from this entire exercise is how important the ability to get to the free throw line is
@@ -201,7 +201,7 @@ Since we haven't put any minutes filters on our input data many of the following
 
 `USG%` is quite interesting as it appears to be non-predictive up until a player reaches 20%, which is the average assuming all five players share possessions equally. Above that point it has a linear relationship.
 
-<div style="text-align:center"><img src="model/feature_selection/plots/USG%_pdp.png" width=70%></div>
+<div style="text-align:center"><img src="model/feature_selection/plots/USG_pdp.png" width=70%></div>
 
 Combining all of the metrics above plus `PER100_ORTG`, `PER100_DRTG`, and `PER100_STL` in one model we observe similar trends. Shooting numbers appear less predictive as other metrics. Free throw attempts and assists make a huge jump in importance after a certain threshold. Blocks and rebounds are useful until a certain number at which point there are diminishing returns.
 
